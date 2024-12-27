@@ -1,0 +1,145 @@
+/* Base colors using Dracula palette */
+:root {
+    --background: #282a36;
+    --current-line: #44475a;
+    --selection: #f8f8f2;
+    --foreground: #f8f8f2;
+    --comment: #6272a4;
+    --cyan: #8be9fd;
+    --green: #50fa7b;
+    --orange: #ffb86c;
+    --pink: #ff79c6;
+    --purple: #bd93f9;
+    --red: #ff5555;
+    --yellow: #f1fa8c;
+}
+
+/* General Body */
+body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+/* Bootstrap Navbar */
+.navbar {
+    background-color: var(--purple);
+}
+
+.navbar .navbar-brand,
+.navbar .navbar-nav .nav-link {
+    color: var(--foreground);
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--cyan);
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: var(--purple);
+    border-color: var(--purple);
+}
+
+.btn-primary:hover {
+    background-color: var(--pink);
+    border-color: var(--pink);
+}
+
+.btn-secondary {
+    background-color: var(--green);
+    border-color: var(--green);
+}
+
+.btn-secondary:hover {
+    background-color: var(--yellow);
+    border-color: var(--yellow);
+}
+
+/* Form Inputs */
+input, select, textarea {
+    background-color: var(--current-line);
+    border: 1px solid var(--comment);
+    color: var(--foreground);
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: var(--cyan);
+    outline-color: var(--cyan);
+}
+
+/* Table Styling */
+.table {
+    background-color: var(--current-line);
+    border-color: var(--comment);
+}
+
+.table th {
+    background-color: var(--purple);
+    color: var(--foreground);
+}
+
+.table td {
+    color: var(--foreground);
+}
+
+.table-hover tbody tr:hover {
+    background-color: var(--selection);
+}
+
+/* Cards */
+.card {
+    background-color: var(--current-line);
+    border-color: var(--comment);
+}
+
+.card-header {
+    background-color: var(--purple);
+    color: var(--foreground);
+}
+
+.card-body {
+    color: var(--foreground);
+}
+
+/* Links */
+a {
+    color: var(--cyan);
+}
+
+a:hover {
+    color: var(--pink);
+}
+
+/* Alerts */
+.alert {
+    background-color: var(--current-line);
+    border-color: var(--comment);
+}
+
+.alert-success {
+    background-color: var(--green);
+    color: var(--background);
+}
+
+.alert-danger {
+    background-color: var(--red);
+    color: var(--background);
+}
+
+.alert-warning {
+    background-color: var(--yellow);
+    color: var(--background);
+}
+
+.alert-info {
+    background-color: var(--cyan);
+    color: var(--background);
+}
+
+/* Footer */
+footer {
+    background-color: var(--current-line);
+    color: var(--foreground);
+    padding: 20px;
+    text-al
